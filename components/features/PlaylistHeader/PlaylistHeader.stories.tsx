@@ -11,15 +11,10 @@ const meta: Meta<typeof PlaylistHeader> = {
 export default meta;
 type Story = StoryObj<typeof PlaylistHeader>;
 
-export const FourImages: Story = {
+export const Default: Story = {
   args: {
     name: "Chill Vibes",
-    coverImages: [
-      "https://placehold.co/112x112?text=1",
-      "https://placehold.co/112x112?text=2",
-      "https://placehold.co/112x112?text=3",
-      "https://placehold.co/112x112?text=4",
-    ],
+    playlistImageUrl: "https://placehold.co/112x112",
     user: {
       name: "Username",
       avatarUrl: "https://placehold.co/32x32?text=U",

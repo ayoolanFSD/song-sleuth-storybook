@@ -24,20 +24,16 @@ const meta: Meta<typeof SidebarMenu> = {
 export default meta;
 type Story = StoryObj<typeof SidebarMenu>;
 
+// SidebarMenu derives its active item from the current pathname, so each
+// variant sets the Storybook navigation pathname rather than a prop.
 export const Default: Story = {
-  args: {
-    activeKey: 'overview',
-  },
+  parameters: { nextjs: { navigation: { pathname: '/account/overview' } } },
 };
 
 export const ChangePasswordActive: Story = {
-  args: {
-    activeKey: 'change-password',
-  },
+  parameters: { nextjs: { navigation: { pathname: '/account/change-password' } } },
 };
 
 export const NoActive: Story = {
-  args: {
-    activeKey: undefined,
-  },
+  parameters: { nextjs: { navigation: { pathname: '/account' } } },
 };
