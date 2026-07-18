@@ -16,7 +16,7 @@ export const Default: Story = {
     subheadline: "Our web app empowers Spotify users to effortlessly purchase tracks from their playlists.",
     ctaLabel: "Link your Spotify account",
     onCtaClick: () => alert("CTA clicked!"),
-    // imageUrl: "/images/turntable.jpg",
-    backgroundImageUrl: "/images/turntable.jpg" 
+    // imageUrl: "images/turntable.jpg",
+    backgroundImageUrl: "images/turntable.jpg" 
   },
 };

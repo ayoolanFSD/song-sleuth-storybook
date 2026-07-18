@@ -52,7 +52,7 @@ export const Social: Story = {
   args: {
     children: 'Continue with Google',
     variant: 'social',
-    icon: <img src="/images/spotify-logo.svg" alt="Google" width={20} height={20} />,
+    icon: <img src="images/spotify-logo.svg" alt="Google" width={20} height={20} />,
   },
 }
 
